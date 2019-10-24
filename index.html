@@ -32,6 +32,17 @@
             $zoho.salesiq.visitor.customaction("Trigger");
         }
     </script>
+    <script>
+        $zoho.salesiq.ready = function (embedinfo) {
+            $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
+                // Your code here
+                if(triggername=="Alerter"){
+                    alert("Alerter JS API");
+                }
+            });
+            // other JSAPIs here
+        }
+    </script>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
