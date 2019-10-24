@@ -24,19 +24,14 @@
 </head>
 
 <body>
-    <button id="custom_button" onclick="embedinfo">Custom Function
+    <button id="custom_button" onclick="trig">Custom Function
     </button>
     <script >
-        function embededinfo(){
+        function trig(){
             alert("Hello! I am an alert box!!");
+            $zoho.salesiq.visitor.customaction("Trigger");
         }
     </script>
-    <script >
-        $zoho.salesiq.ready=function(embedinfo)
-        {
-           $zoho.salesiq.visitor.customaction("Trigger");  
-        }
-   </script>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
