@@ -27,9 +27,10 @@
     <button id="custom_button" onclick="customfunction">Custom Function
     </button>
     <script >
-        function customfunction(){
+         custom_button.addEventListener( "click", customfunction()
+        {
             $zoho.salesiq.visitor.customaction("Trigger");
-        }
+        });
     </script>
     <!-- Page Preloder -->
     <div id="preloder">
