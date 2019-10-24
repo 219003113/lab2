@@ -29,10 +29,7 @@
     <script >
         function trig(){
             $zoho.salesiq.visitor.customaction("Trigger");
-        }
-    </script>
-    <script>
-        $zoho.salesiq.ready = function (embedinfo) {
+            $zoho.salesiq.ready = function (embedinfo) {
             $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
                 // Your code here
                 if(triggername=="Alerter"){
@@ -40,6 +37,7 @@
                 }
             });
             // other JSAPIs here
+        }
         }
     </script>
     <!-- Page Preloder -->
