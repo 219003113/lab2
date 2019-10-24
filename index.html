@@ -24,8 +24,13 @@
 </head>
 
 <body>
-    <button id="custom_button">Custom Function
+    <button id="custom_button" onclick="customfunction">Custom Function
     </button>
+    <script >
+        function customfunction(){
+            $zoho.salesiq.visitor.customaction("Trigger");
+        }
+    </script>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -345,7 +350,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/circle-progress.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/salesiq.js"></script>
-    <script src="js/customfunction"></script>
 </body>
 
 </html>
